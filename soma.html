@@ -1,0 +1,43 @@
+<script>
+
+const numero1 = parseFloat(prompt("Digite o primeiro número:"));
+
+// Solicita ao usuário que insira o segundo número
+const numero2 = parseFloat(prompt("Digite o segundo número:"));
+  //verificar se eh par ou impar
+  function isPar(numero) {
+  return numero % 2 === 0;
+}
+  function verificarParOuImpar(numero) {
+  if (isPar(numero)) {
+    console.log(numero + " eh um numero par.");
+  } else { 
+    console.log(numero + " eh um numero impar.");
+  }
+}
+
+// Verifica se os valores inseridos são válidos
+if (isNaN(numero1) || isNaN(numero2)) {
+    console.log("Um ou ambos os valores inseridos não são números válidos.");
+} else {
+  // Exibe o resultado das contas
+    var soma = numero1 + numero2;
+    console.log(`A soma de ${numero1} e ${numero2} é igual a ${soma}`);
+    var subtracao = numero1 - numero2;
+    console.log(`A subtracao de ${numero1} e ${numero2} é igual a ${subtracao}`);
+    var divisao = numero1 / numero2;
+    console.log(`A divisao de ${numero1} e ${numero2} é igual a ${divisao}`);
+    var multiplicacao = numero1 * numero2;
+    console.log(`A multiplicacao de ${numero1} e ${numero2} é igual a ${multiplicacao}`);
+}
+//chama a funcao par ou impar
+verificarParOuImpar(numero1)
+verificarParOuImpar(numero2)
+
+//Verifica se os numeros são iguais
+if (numero1 != numero2) {
+      console.log(`os numeros sao diferentes`);}
+      else{
+        console.log(`os numeros sao iguais`);
+    }
+</script>
